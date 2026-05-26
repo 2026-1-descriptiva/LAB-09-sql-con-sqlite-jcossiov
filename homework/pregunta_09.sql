@@ -36,5 +36,5 @@
 --     K1     c21  c22         c23   c24    c25
 --  0  29  101.11  100  2017-11-17  0.42  MV-CB
 --
---  >>> Escriba su codigo a partir de este punto <<<
---
+
+SELECT * FROM tbl2 ORDER BY c21 LIMIT 1;

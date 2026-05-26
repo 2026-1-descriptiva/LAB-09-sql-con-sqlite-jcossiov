@@ -32,12 +32,9 @@
 --  la tabla tbl0 para los que el campo c02 es igual a 100
 --  o igual a 600
 -- 
--- Rta/
---    K0   c01  c02    c03  c04
---  0  B  7000  100  OLPKN  0.2
---  1  C  1000  600  LMMML  0.2
---  2  D  4000  600  PJLJL  0.4
---  3  G  5000  100  NLPLO  0.2
+
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+
+SELECT * FROM tbl0 WHERE c02 IN (100, 600);

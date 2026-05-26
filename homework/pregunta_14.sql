@@ -33,14 +33,11 @@
 --  columna c21 en la tabla tbl2, para aquellos registros
 --  con c13 mayor a 400.
 --
---  Rta/
---  K0    avg(c21)
---  0  A  593.495000
---  1  B  575.470000
---  2  C  530.753000
+
 --  3  D  655.612500
 --  4  E  555.323077
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
 
+SELECT K0, avg(c21) FROM tbl1 JOIN tbl2 ON tbl1.K1 = tbl2.K1 WHERE c13 > 400 GROUP BY K0;
