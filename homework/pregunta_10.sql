@@ -32,8 +32,13 @@
 --  campos de los registros de la tabla tbl0 
 --  con la columna c02 mayor o igual a 300.
 --
-
---  4   I  3000  300  PPPPL  0.3
+--  Rta/
+--     K0   c01  c02    c03  c04
+--  0  A  5000  900  NMNJL  0.4
+--  1  C  1000  600  LMMML  0.2
+--  2  D  4000  600  PJLJL  0.4
+--  3  F  2000  300  NNPJO  0.3
+--  4  I  3000  300  PPPPL  0.3
 --
 
 SELECT * FROM tbl0 WHERE c02 >= 300;

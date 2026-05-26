@@ -32,8 +32,14 @@
 --  para los registros de la tabla tbl1 para los que la 
 --  columna c16 empieza por la misma letra de la columna K0.
 --
+--  Rta/
+--    K0   c16
+--  0  E  EGFD
+--  1  B  BDEE
+--  2  C  CCCE
+--
 
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
 
-SELECT K0, c16 FROM tbl1 WHERE c16 LIKE K0 || '%';
+SELECT K0, c16 FROM tbl1 WHERE SUBSTR(c16, 1, 1) = K0;
